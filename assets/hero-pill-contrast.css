@@ -1,0 +1,29 @@
+.hero-capsule {
+  opacity: .58;
+  filter: blur(7px) saturate(1.12) contrast(1.04);
+}
+
+.hero-capsule-b {
+  opacity: .50;
+  filter: blur(9px) saturate(1.12) contrast(1.04);
+}
+
+.hero-capsule-c {
+  opacity: .44;
+  filter: blur(11px) saturate(1.12) contrast(1.04);
+}
+
+@media (max-width: 767px) {
+  .hero-capsule {
+    opacity: .42;
+    filter: blur(8px) saturate(1.1) contrast(1.03);
+  }
+
+  .hero-capsule-b {
+    opacity: .38;
+  }
+
+  .hero-capsule-c {
+    opacity: .34;
+  }
+}
