@@ -19,7 +19,13 @@
 
 .hero-section .hero-inner {
   min-height: calc(100svh - 64px) !important;
+  padding-top: 0 !important;
   padding-bottom: clamp(28px, 4vh, 44px) !important;
+}
+
+.hero-meta-row {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
 }
 
 .hero-section .hero-product-wrap {
@@ -217,7 +223,7 @@ body.sticky-shop-ready .sticky-shop-cta {
 
   .hero-section .hero-inner {
     min-height: auto !important;
-    padding-top: 28px !important;
+    padding-top: 0 !important;
     padding-bottom: 30px !important;
   }
 
