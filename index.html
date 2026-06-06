@@ -139,4 +139,30 @@
   window.addEventListener('resize', update, { passive: true });
   update();
 })();
+</script><script id="science-card-interactions">
+(() => {
+  const cards = Array.from(document.querySelectorAll('.science-points article'));
+  if (!cards.length) return;
+  cards[0].classList.add('is-active');
+  cards.forEach((card) => {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    const activate = () => {
+      cards.forEach((item) => item.classList.toggle('is-active', item === card));
+    };
+    card.addEventListener('pointermove', (event) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--card-x', `${((event.clientX - rect.left) / rect.width * 100).toFixed(1)}%`);
+      card.style.setProperty('--card-y', `${((event.clientY - rect.top) / rect.height * 100).toFixed(1)}%`);
+    }, { passive: true });
+    card.addEventListener('pointerenter', activate, { passive: true });
+    card.addEventListener('click', activate);
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        activate();
+      }
+    });
+  });
+})();
 </script></body></html>
