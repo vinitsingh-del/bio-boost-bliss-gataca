@@ -199,9 +199,36 @@
 (() => {
   const section = document.querySelector("[data-luxury-reviews]");
   if (!section || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
-  const cards = [...section.querySelectorAll("[data-tilt-card]")];
-  cards.forEach((card) => {
+	  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+	  const cards = [...section.querySelectorAll("[data-tilt-card]")];
+	  let activeReview = 0;
+	  const setActiveReview = () => {
+	    section.setAttribute("data-review-active", String(activeReview));
+	    cards.forEach((card, index) => {
+	      card.classList.toggle("is-active-review", index === activeReview);
+	      card.setAttribute("aria-hidden", index === activeReview ? "false" : "true");
+	    });
+	  };
+	  setActiveReview();
+	  let reviewTimer = null;
+	  const startReviewTimer = () => {
+	    if (reviewTimer) return;
+	    reviewTimer = window.setInterval(() => {
+	      activeReview = (activeReview + 1) % Math.max(cards.length, 1);
+	      setActiveReview();
+	    }, 3200);
+	  };
+	  const stopReviewTimer = () => {
+	    if (!reviewTimer) return;
+	    window.clearInterval(reviewTimer);
+	    reviewTimer = null;
+	  };
+	  startReviewTimer();
+	  section.addEventListener("mouseenter", stopReviewTimer);
+	  section.addEventListener("mouseleave", startReviewTimer);
+	  section.addEventListener("focusin", stopReviewTimer);
+	  section.addEventListener("focusout", startReviewTimer);
+	  cards.forEach((card) => {
     const reset = () => {
       card.style.setProperty("--rx", "0deg");
       card.style.setProperty("--ry", "0deg");

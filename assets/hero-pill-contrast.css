@@ -3381,3 +3381,133 @@ body.sticky-shop-ready .sticky-shop-cta {
     animation: none !important;
   }
 }
+
+.luxury-review-section[data-review-active] .luxury-review-card {
+  transition:
+    transform .9s cubic-bezier(.18, .82, .22, 1),
+    opacity .55s ease,
+    filter .55s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.luxury-review-section[data-review-active] .luxury-review-card.is-active-review {
+  border-color: rgba(255, 255, 255, .36);
+  box-shadow: 0 46px 130px rgba(0, 0, 0, .46), inset 0 1px 0 rgba(255, 255, 255, .2);
+}
+
+.luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(1),
+.luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(2),
+.luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(3) {
+  z-index: 4;
+  left: 4%;
+  right: auto;
+  top: 0;
+  bottom: auto;
+  width: min(38vw, 390px);
+  height: 520px;
+  opacity: 1;
+  filter: none;
+  transform: translate3d(0, 92px, 120px) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(-4deg);
+}
+
+.luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(2),
+.luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(3),
+.luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(1) {
+  z-index: 3;
+  left: 54%;
+  right: auto;
+  top: 90px;
+  bottom: auto;
+  width: min(30vw, 320px);
+  height: 430px;
+  opacity: .72;
+  filter: brightness(.84);
+  transform: translate3d(0, 34px, 38px) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(7deg) scale(.96);
+}
+
+.luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(3),
+.luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(1),
+.luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(2) {
+  z-index: 2;
+  left: 38%;
+  right: auto;
+  top: 260px;
+  bottom: auto;
+  width: min(30vw, 330px);
+  height: 350px;
+  opacity: .52;
+  filter: brightness(.76);
+  transform: translate3d(0, 0, 60px) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(-2deg) scale(.92);
+}
+
+@media (max-width: 640px) {
+  .luxury-review-section[data-review-active] {
+    padding-bottom: 48px;
+  }
+
+  .luxury-review-section[data-review-active] .luxury-review-stage,
+  .luxury-review-section[data-review-active] .luxury-review-cards {
+    min-height: 470px;
+  }
+
+  .luxury-review-section[data-review-active] .luxury-review-orbit {
+    top: 10px;
+    right: -18px;
+    width: 168px;
+    opacity: .58;
+  }
+
+  .luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(1),
+  .luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(2),
+  .luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(3) {
+    left: 50%;
+    top: 38px;
+    width: min(78vw, 326px);
+    height: 386px;
+    opacity: 1;
+    filter: none;
+    transform: translate3d(-50%, 0, 90px) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(-2deg) scale(1);
+  }
+
+  .luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(2),
+  .luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(3),
+  .luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(1) {
+    left: 55%;
+    top: 54px;
+    width: min(72vw, 300px);
+    height: 354px;
+    opacity: .46;
+    filter: brightness(.76);
+    transform: translate3d(-50%, 0, 28px) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(5deg) scale(.88);
+  }
+
+  .luxury-review-section[data-review-active="0"] .luxury-review-card:nth-child(3),
+  .luxury-review-section[data-review-active="1"] .luxury-review-card:nth-child(1),
+  .luxury-review-section[data-review-active="2"] .luxury-review-card:nth-child(2) {
+    left: 45%;
+    top: 72px;
+    width: min(68vw, 284px);
+    height: 330px;
+    opacity: .24;
+    filter: brightness(.62);
+    transform: translate3d(-50%, 0, 0) rotateX(var(--rx)) rotateY(var(--ry)) rotateZ(-6deg) scale(.8);
+  }
+
+  .luxury-review-section[data-review-active] .luxury-review-card-body {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 16px;
+    padding: 12px;
+  }
+
+  .luxury-review-section[data-review-active] .luxury-review-card-body h3 {
+    font-size: .95rem;
+  }
+
+  .luxury-review-section[data-review-active] .luxury-review-card-body p {
+    font-size: 11.5px;
+    line-height: 1.42;
+  }
+}
