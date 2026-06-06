@@ -2607,6 +2607,75 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 }
 
+.testimonial-section button > span.absolute.inset-0 {
+  display: grid !important;
+  place-items: center !important;
+  pointer-events: none;
+}
+
+.testimonial-section button > span.absolute.inset-0 > span {
+  position: relative !important;
+  inset: auto !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 64px !important;
+  height: 64px !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.testimonial-section button > span.absolute.inset-0 > span > svg {
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+  transform: translateX(2px) !important;
+}
+
+.testimonial-section button > span:nth-of-type(2) {
+  --tw-translate-x: 0 !important;
+  --tw-translate-y: 0 !important;
+  left: 50% !important;
+  top: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  display: grid !important;
+  place-items: center !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.testimonial-section button > span:nth-of-type(2) svg {
+  margin: 0 !important;
+  transform: translateX(2px) !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial-section button > span.absolute.inset-0 {
+    inset: 0 !important;
+  }
+
+  .testimonial-section button > span:nth-of-type(2) {
+    --tw-translate-x: 0 !important;
+    --tw-translate-y: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .testimonial-section button > span.absolute.inset-0 > span {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .testimonial-section button > span.absolute.inset-0 > span > svg {
+    width: 21px !important;
+    height: 21px !important;
+    transform: translateX(2px) !important;
+  }
+}
+
 @media (max-width: 560px) {
   .domore-botanical-section {
     padding: 48px 14px 54px;
