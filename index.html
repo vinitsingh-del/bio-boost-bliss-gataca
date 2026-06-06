@@ -120,4 +120,19 @@
   window.addEventListener('resize', request, { passive: true });
   update();
 })();
+</script><script id="sticky-shop-reveal">
+(() => {
+  const hero = document.querySelector('[data-hero]');
+  const product = document.querySelector('#product-details');
+  const sticky = document.querySelector('.sticky-shop-cta');
+  if (!hero || !product || !sticky) return;
+  const update = () => {
+    const heroBottom = hero.getBoundingClientRect().bottom;
+    const productTop = product.getBoundingClientRect().top;
+    document.body.classList.toggle('sticky-shop-ready', heroBottom < window.innerHeight * 0.42 || productTop < window.innerHeight * 0.72);
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+})();
 </script></body></html>

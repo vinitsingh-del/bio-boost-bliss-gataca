@@ -13,6 +13,77 @@
   filter: blur(11px) saturate(1.12) contrast(1.04);
 }
 
+.hero-section {
+  min-height: auto;
+}
+
+.hero-section .hero-inner {
+  min-height: calc(100svh - 64px) !important;
+  padding-bottom: clamp(28px, 4vh, 44px) !important;
+}
+
+.hero-section .hero-product-wrap {
+  height: clamp(310px, 42vh, 430px) !important;
+  min-height: 310px !important;
+  margin-top: clamp(-16px, -1vw, -6px) !important;
+  margin-bottom: 0 !important;
+}
+
+.hero-section .hero-bottle,
+.hero-bottle-shell {
+  height: clamp(330px, 42vh, 470px) !important;
+  width: clamp(330px, 38vw, 470px) !important;
+  max-width: min(78vw, 470px) !important;
+}
+
+.hero-bottle-img {
+  height: 90% !important;
+  transform: scale(.98);
+}
+
+.hero-section .hero-product-wrap::before {
+  width: min(58vw, 520px);
+  height: min(58vw, 520px);
+  opacity: .86;
+}
+
+.hero-section .hero-product-wrap::after {
+  top: 52%;
+  width: min(48vw, 430px);
+  height: min(48vw, 430px);
+}
+
+.hero-discover-link {
+  margin-top: clamp(100px, 9vh, 116px) !important;
+  padding: 13px 24px;
+  min-width: 236px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, .18), 0 0 0 8px rgba(255, 255, 255, .46);
+}
+
+.section-separator {
+  height: clamp(10px, 1.2vw, 18px) !important;
+  background: linear-gradient(180deg, #fafaf7 0%, #f7f3ea 100%) !important;
+  border-top: 1px solid rgba(0, 0, 0, .045) !important;
+  border-bottom: 1px solid rgba(168, 78, 36, .12) !important;
+}
+
+.product-detail-section > div {
+  padding-top: clamp(32px, 4.5vw, 58px) !important;
+}
+
+.sticky-shop-cta {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(14px);
+  transition: opacity .28s ease, transform .28s ease;
+}
+
+body.sticky-shop-ready .sticky-shop-cta {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 @media (max-width: 767px) {
   .hero-capsule {
     opacity: .42;
@@ -25,5 +96,49 @@
 
   .hero-capsule-c {
     opacity: .34;
+  }
+
+  .hero-section {
+    min-height: auto !important;
+  }
+
+  .hero-section .hero-inner {
+    min-height: auto !important;
+    padding-top: 28px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .hero-section .hero-product-wrap {
+    height: clamp(300px, 42vh, 360px) !important;
+    min-height: 300px !important;
+    margin-top: -4px !important;
+  }
+
+  .hero-section .hero-bottle,
+  .hero-bottle-shell {
+    height: clamp(300px, 40vh, 348px) !important;
+    width: clamp(300px, 86vw, 348px) !important;
+    max-width: 88vw !important;
+  }
+
+  .hero-bottle-img {
+    height: 90% !important;
+    transform: scale(.98);
+  }
+
+  .hero-discover-link {
+    margin-top: 42px !important;
+    min-width: 226px;
+    padding: 12px 22px;
+    font-size: 10px;
+  }
+
+  .section-separator {
+    height: 10px !important;
+  }
+
+  .product-detail-section > div {
+    padding-top: 24px !important;
+    padding-bottom: 92px !important;
   }
 }
