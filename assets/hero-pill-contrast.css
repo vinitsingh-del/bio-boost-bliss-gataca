@@ -3728,3 +3728,24 @@ body.sticky-shop-ready .sticky-shop-cta {
     transform: translateY(-50%) scale(calc(.7 + var(--domore-open, 0) * .5));
   }
 }
+
+.testimonial-section button > span:nth-of-type(2) {
+  overflow: visible !important;
+}
+
+.testimonial-section button > span:nth-of-type(2) svg {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 24px !important;
+  height: 24px !important;
+  transform: translate(-42%, -50%) !important;
+}
+
+@media (max-width: 767px) {
+  .testimonial-section button > span:nth-of-type(2) svg {
+    width: 21px !important;
+    height: 21px !important;
+    transform: translate(-42%, -50%) !important;
+  }
+}
