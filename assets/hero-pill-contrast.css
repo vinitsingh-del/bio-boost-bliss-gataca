@@ -1193,22 +1193,33 @@ body.sticky-shop-ready .sticky-shop-cta {
 }
 
 .border-y.border-rust\/50.bg-background {
-  border-top-color: rgba(5, 5, 5, .16) !important;
-  border-bottom-color: rgba(5, 5, 5, .16) !important;
-  background: #fbfbf8 !important;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .82), inset 0 -1px 0 rgba(255, 255, 255, .82);
+  border-top-color: #050505 !important;
+  border-bottom-color: #050505 !important;
+  background: #fff !important;
+  box-shadow: none !important;
 }
 
 .border-y.border-rust\/50.bg-background .text-rust {
   color: #050505 !important;
+  font-weight: 600 !important;
 }
 
 .border-y.border-rust\/50.bg-background .bg-rust\/70 {
-  background-color: rgba(5, 5, 5, .28) !important;
+  background-color: rgba(5, 5, 5, .25) !important;
 }
 
 .border-y.border-rust\/50.bg-background .animate-ticker {
-  filter: grayscale(1);
+  animation: tickerLeftToRight 14s linear infinite !important;
+  filter: grayscale(1) contrast(1.08);
+}
+
+@keyframes tickerLeftToRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .testimonial-section button > span:nth-of-type(2) {
