@@ -2683,3 +2683,100 @@ body.sticky-shop-ready .sticky-shop-cta {
   opacity: 1 !important;
   transform: scale(1) rotate(0deg) !important;
 }
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 74svh !important;
+    overflow: hidden !important;
+  }
+
+  .hero-section .hero-inner {
+    min-height: 74svh !important;
+    padding-top: 14px !important;
+    padding-bottom: 46px !important;
+  }
+
+  .hero-meta-row {
+    width: min(100%, 302px) !important;
+    margin-bottom: 4px !important;
+    font-size: 7.2px !important;
+    letter-spacing: .235em !important;
+  }
+
+  .hero-section .hero-kicker {
+    margin-top: 6px !important;
+    font-size: 9.9px !important;
+    letter-spacing: .108em !important;
+  }
+
+  .hero-section .hero-title {
+    max-width: 84vw !important;
+    margin-top: .5rem !important;
+    font-size: clamp(1.46rem, 7.3vw, 2.48rem) !important;
+    line-height: .92 !important;
+  }
+
+  .hero-title-arc {
+    width: min(88vw, 386px) !important;
+    min-height: 66px !important;
+  }
+
+  .hero-title-svg text {
+    font-size: 94px !important;
+  }
+
+  .hero-section .hero-subtitle {
+    margin-top: .45rem !important;
+    max-width: 82vw !important;
+    font-size: .665rem !important;
+    line-height: 1.34 !important;
+  }
+
+  .hero-cro-tags {
+    gap: 5px !important;
+    margin-top: 8px !important;
+    max-width: 88vw !important;
+  }
+
+  .hero-cro-tags span {
+    padding: 5px 8px !important;
+    font-size: 6.45px !important;
+    letter-spacing: .08em !important;
+  }
+
+  .hero-section .hero-product-wrap {
+    height: 35vh !important;
+    min-height: 302px !important;
+    margin-top: 6px !important;
+    align-items: start !important;
+  }
+
+  .hero-section .hero-bottle,
+  .hero-bottle-shell {
+    height: min(36.3vh, 325px) !important;
+    width: min(92vw, 325px) !important;
+    max-width: 92vw !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-bottle-img {
+    height: 92% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-bling-tag {
+    bottom: -32px !important;
+    min-width: 124px !important;
+    min-height: 28px !important;
+    padding: 0 10px !important;
+    font-size: 7.2px !important;
+    letter-spacing: .14em !important;
+  }
+
+  .hero-discover-link {
+    margin-top: 34px !important;
+    padding: 10px 15px !important;
+    min-width: 188px !important;
+    font-size: 9px !important;
+  }
+}
