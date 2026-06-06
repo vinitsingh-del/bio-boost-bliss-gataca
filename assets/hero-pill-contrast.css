@@ -1188,6 +1188,74 @@ body.sticky-shop-ready .sticky-shop-cta {
 }
 
 @media (max-width: 767px) {
+  .hero-section {
+    min-height: 78svh !important;
+  }
+
+  .hero-section .hero-inner {
+    min-height: 78svh !important;
+    padding-top: 18px !important;
+    padding-bottom: 58px !important;
+  }
+
+  .hero-meta-row {
+    width: min(100%, 318px) !important;
+    margin-bottom: 6px !important;
+    font-size: 8px !important;
+    letter-spacing: .26em !important;
+  }
+
+  .hero-section .hero-kicker {
+    margin-top: 8px !important;
+    font-size: 11px !important;
+    letter-spacing: .12em !important;
+  }
+
+  .hero-section .hero-title {
+    max-width: 88vw !important;
+    margin-top: .62rem !important;
+    font-size: clamp(1.62rem, 8.1vw, 2.76rem) !important;
+    line-height: .94 !important;
+  }
+
+  .hero-section .hero-subtitle {
+    margin-top: .62rem !important;
+    max-width: 86vw !important;
+    font-size: .74rem !important;
+    line-height: 1.38 !important;
+  }
+
+  .hero-cro-tags {
+    max-width: 88vw !important;
+    gap: 5px !important;
+    margin-top: 8px !important;
+  }
+
+  .hero-cro-tags span {
+    padding: 6px 8px !important;
+    font-size: 8px !important;
+    letter-spacing: .08em !important;
+  }
+
+  .hero-section .hero-product-wrap {
+    height: 32vh !important;
+    min-height: 228px !important;
+    margin-top: .36rem !important;
+  }
+
+  .hero-section .hero-bottle {
+    height: min(31vh, 282px) !important;
+    width: min(82vw, 282px) !important;
+    max-width: 82vw !important;
+  }
+
+  .hero-discover-link {
+    margin-top: 28px !important;
+    min-width: 204px !important;
+    padding: 10px 16px !important;
+    font-size: 9px !important;
+  }
+
   .samantha-stack-section {
     padding: 46px 12px 58px;
   }
