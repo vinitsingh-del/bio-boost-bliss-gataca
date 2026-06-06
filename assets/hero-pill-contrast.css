@@ -2946,18 +2946,18 @@ body.sticky-shop-ready .sticky-shop-cta {
 
 @media (max-width: 767px) {
   header.sticky > div:first-child .animate-ticker {
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
   }
 
   header.sticky > div:nth-child(2) {
-    min-height: 61px !important;
-    padding-top: 7px !important;
-    padding-bottom: 7px !important;
+    min-height: 44px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
   }
 
   header.sticky > div:nth-child(2) > a img {
-    height: 15px !important;
+    height: 14px !important;
     width: auto !important;
   }
 
@@ -2981,9 +2981,9 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-section .hero-inner {
-    min-height: 82svh !important;
+    min-height: 78svh !important;
     padding-top: 2px !important;
-    padding-bottom: 40px !important;
+    padding-bottom: 34px !important;
   }
 
   .hero-section .hero-title {
@@ -3015,7 +3015,7 @@ body.sticky-shop-ready .sticky-shop-cta {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     width: min(90vw, 342px) !important;
     max-width: 342px !important;
-    margin-top: -5px !important;
+    margin-top: 4px !important;
     margin-inline: auto !important;
     gap: 6px !important;
   }
@@ -3035,6 +3035,7 @@ body.sticky-shop-ready .sticky-shop-cta {
     height: 39vh !important;
     min-height: 358px !important;
     margin-top: -2px !important;
+    margin-bottom: 10px !important;
   }
 
   .hero-section .hero-bottle,
