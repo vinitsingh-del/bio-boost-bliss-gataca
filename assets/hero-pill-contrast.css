@@ -3347,3 +3347,37 @@ body.sticky-shop-ready .sticky-shop-cta {
     right: 0 !important;
   }
 }
+
+.hero-section {
+  --hero-product-zoom: 1;
+}
+
+.hero-section .hero-orbit {
+  transform: translate(-50%, -50%) !important;
+  transition: none !important;
+}
+
+.hero-section .hero-bottle,
+.hero-bottle-shell {
+  transform: translate3d(0, 0, 0) scale(var(--hero-product-zoom, 1)) !important;
+  transform-origin: center 58%;
+  transition: transform .12s linear;
+  will-change: transform;
+}
+
+.hero-bottle-img {
+  animation: heroProductFastPop .72s cubic-bezier(.13, .9, .18, 1) both, heroProductShakeZoom 2.8s ease-in-out .72s infinite !important;
+  transform-origin: 50% 58%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section .hero-bottle,
+  .hero-bottle-shell {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .hero-bottle-img {
+    animation: none !important;
+  }
+}
