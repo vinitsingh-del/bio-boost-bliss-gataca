@@ -3511,3 +3511,90 @@ body.sticky-shop-ready .sticky-shop-cta {
     line-height: 1.42;
   }
 }
+
+@media (max-width: 860px) {
+  .domore-stage {
+    min-height: 660px !important;
+    border-radius: 22px !important;
+  }
+
+  .domore-stage::before {
+    inset: 12% 10% !important;
+  }
+
+  .domore-stage::after {
+    inset: 22% 18% !important;
+    opacity: .38 !important;
+  }
+
+  .domore-plant-wrap {
+    align-self: start !important;
+    justify-self: center !important;
+    padding-top: 118px !important;
+  }
+
+  .domore-red-botanical {
+    width: min(58vw, 258px) !important;
+    transform: scale(calc(.88 + var(--domore-progress, 0) * .14)) translate3d(0, calc((.5 - var(--domore-progress, 0)) * 12px), 0) !important;
+  }
+
+  .domore-point {
+    width: calc(100% - 28px) !important;
+    left: 14px !important;
+    right: auto !important;
+    grid-template-columns: 29px minmax(0, 1fr) 56px !important;
+    gap: 8px !important;
+    min-height: 46px !important;
+    padding: 6px 0 !important;
+  }
+
+  .domore-point span {
+    width: 29px !important;
+    height: 29px !important;
+    font-size: 10px !important;
+    letter-spacing: .12em !important;
+  }
+
+  .domore-point h3 {
+    font-size: clamp(.86rem, 4.55vw, 1rem) !important;
+    line-height: 1.06 !important;
+    text-align: left !important;
+  }
+
+  .domore-point::before {
+    width: 56px !important;
+    grid-column: 3 !important;
+    transform-origin: right center !important;
+    background: linear-gradient(90deg, rgba(5, 5, 5, .08), rgba(5, 5, 5, .62)) !important;
+  }
+
+  .domore-point::after {
+    left: auto !important;
+    right: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    box-shadow: 0 0 0 9px rgba(5, 5, 5, .055), 0 14px 26px rgba(0, 0, 0, .1) !important;
+  }
+
+  .domore-point-1 { top: 34px !important; }
+  .domore-point-2 { top: 360px !important; }
+  .domore-point-3 { top: 416px !important; }
+  .domore-point-4 { top: 472px !important; }
+  .domore-point-5 { top: 528px !important; }
+
+  .domore-point-2,
+  .domore-point-4 {
+    grid-template-columns: 29px minmax(0, 1fr) 56px !important;
+  }
+
+  .domore-point-2 span,
+  .domore-point-4 span {
+    grid-column: 1 !important;
+  }
+
+  .domore-point-2 h3,
+  .domore-point-4 h3 {
+    grid-column: 2 !important;
+    text-align: left !important;
+  }
+}
