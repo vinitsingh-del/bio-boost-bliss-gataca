@@ -2946,34 +2946,34 @@ body.sticky-shop-ready .sticky-shop-cta {
 
 @media (max-width: 767px) {
   header.sticky > div:first-child .animate-ticker {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
 
   header.sticky > div:nth-child(2) {
-    min-height: 76px !important;
-    padding-top: 9px !important;
-    padding-bottom: 9px !important;
+    min-height: 61px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
   }
 
   header.sticky > div:nth-child(2) > a img {
-    height: 19px !important;
+    height: 15px !important;
     width: auto !important;
   }
 
   header.sticky button[aria-label="Cart"] {
-    padding: 6px !important;
+    padding: 5px !important;
   }
 
   header.sticky button[aria-label="Cart"] svg {
-    width: 20px !important;
-    height: 20px !important;
+    width: 16px !important;
+    height: 16px !important;
   }
 
   header.sticky button[aria-label="Cart"] span {
-    width: 15px !important;
-    height: 15px !important;
-    font-size: 9px !important;
+    width: 12px !important;
+    height: 12px !important;
+    font-size: 8px !important;
   }
 
   .hero-section {
