@@ -1226,27 +1226,60 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-cro-tags {
-    max-width: 88vw !important;
-    gap: 5px !important;
-    margin-top: 8px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: min(88vw, 328px) !important;
+    max-width: 328px !important;
+    gap: 7px !important;
+    margin-top: 10px !important;
+    margin-inline: auto !important;
   }
 
   .hero-cro-tags span {
-    padding: 6px 8px !important;
-    font-size: 8px !important;
-    letter-spacing: .08em !important;
+    justify-content: center !important;
+    min-height: 31px !important;
+    border-color: rgba(5, 5, 5, .13) !important;
+    background: rgba(255, 255, 255, .72) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 10px 26px rgba(0, 0, 0, .055) !important;
+    padding: 0 10px !important;
+    font-size: 7.6px !important;
+    letter-spacing: .105em !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-cro-tags span::before {
+    width: 5px !important;
+    height: 5px !important;
+    background: #050505 !important;
+    box-shadow: 0 0 0 3px rgba(5, 5, 5, .06) !important;
   }
 
   .hero-section .hero-product-wrap {
-    height: 32vh !important;
-    min-height: 228px !important;
-    margin-top: .36rem !important;
+    height: 34vh !important;
+    min-height: 298px !important;
+    margin-top: 10px !important;
+    align-items: start !important;
   }
 
   .hero-section .hero-bottle {
-    height: min(31vh, 282px) !important;
-    width: min(82vw, 282px) !important;
-    max-width: 82vw !important;
+    height: min(30vh, 268px) !important;
+    width: min(78vw, 268px) !important;
+    max-width: 78vw !important;
+    margin-top: 40px !important;
+  }
+
+  .hero-bling-tag {
+    top: 0 !important;
+    min-width: 166px !important;
+    min-height: 34px !important;
+    padding: 0 14px !important;
+    border-color: rgba(5, 5, 5, .16) !important;
+    background: rgba(255, 255, 255, .82) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .10), inset 0 1px 0 rgba(255, 255, 255, .92) !important;
+    color: #050505 !important;
+    font-size: 8.8px !important;
+    letter-spacing: .16em !important;
   }
 
   .hero-discover-link {
