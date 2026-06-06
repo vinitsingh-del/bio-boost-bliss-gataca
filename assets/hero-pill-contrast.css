@@ -1206,6 +1206,70 @@ body.sticky-shop-ready .sticky-shop-cta {
   filter: grayscale(1);
 }
 
+.testimonial-section button > span:nth-of-type(2) {
+  display: grid !important;
+  place-items: center !important;
+}
+
+.testimonial-section button > span:nth-of-type(2) svg {
+  display: block !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+  transform: translateX(3px) !important;
+}
+
+.hero-bottle-img {
+  animation: heroProductFastPop .72s cubic-bezier(.13, .9, .18, 1) both, heroProductShakeZoom 2.8s ease-in-out .72s infinite !important;
+}
+
+.hero-bling-tag {
+  top: auto !important;
+  bottom: clamp(-48px, -5.8vh, -34px) !important;
+}
+
+.hero-discover-link {
+  margin-top: clamp(62px, 7vh, 82px) !important;
+}
+
+.samantha-stack-note {
+  display: none !important;
+}
+
+@keyframes heroProductFastPop {
+  0% {
+    opacity: 0;
+    transform: scale(.66) translateY(24px) rotate(-1.2deg);
+    filter: saturate(1.03) contrast(1.03) drop-shadow(0 10px 16px rgba(0, 0, 0, .06));
+  }
+  64% {
+    opacity: 1;
+    transform: scale(1.14) translateY(-3px) rotate(1.2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.06) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes heroProductShakeZoom {
+  0%, 100% {
+    transform: scale(1.06) translate3d(0, 0, 0) rotate(0deg);
+  }
+  18% {
+    transform: scale(1.085) translate3d(-1px, -2px, 0) rotate(-.55deg);
+  }
+  36% {
+    transform: scale(1.075) translate3d(1px, 1px, 0) rotate(.5deg);
+  }
+  58% {
+    transform: scale(1.1) translate3d(-.5px, 0, 0) rotate(-.28deg);
+  }
+  76% {
+    transform: scale(1.075) translate3d(1px, -1px, 0) rotate(.32deg);
+  }
+}
+
 @media (max-width: 767px) {
   .hero-section {
     min-height: 78svh !important;
@@ -1289,7 +1353,8 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-bling-tag {
-    top: 0 !important;
+    top: auto !important;
+    bottom: -42px !important;
     min-width: 166px !important;
     min-height: 34px !important;
     padding: 0 14px !important;
@@ -1302,7 +1367,7 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-discover-link {
-    margin-top: 28px !important;
+    margin-top: 54px !important;
     min-width: 204px !important;
     padding: 10px 16px !important;
     font-size: 9px !important;
