@@ -1487,17 +1487,17 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-section .hero-product-wrap {
-    height: 34vh !important;
-    min-height: 298px !important;
+    height: 37vh !important;
+    min-height: 320px !important;
     margin-top: 10px !important;
     align-items: start !important;
   }
 
   .hero-section .hero-bottle {
-    height: min(30vh, 268px) !important;
-    width: min(78vw, 268px) !important;
-    max-width: 78vw !important;
-    margin-top: 40px !important;
+    height: min(33vh, 295px) !important;
+    width: min(84vw, 295px) !important;
+    max-width: 84vw !important;
+    margin-top: 32px !important;
   }
 
   .hero-bling-tag {
