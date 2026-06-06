@@ -21,7 +21,6 @@
       <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".14"/>
     </filter>
   </defs>
-  <rect width="1000" height="1000" fill="#fff"/>
   <g filter="url(#softShadow)">
     <g fill="none" stroke="url(#stem)" stroke-linecap="round" stroke-linejoin="round">
       <path d="M498 800C496 690 499 571 505 445c5-111 15-221 35-320" stroke-width="18"/>
