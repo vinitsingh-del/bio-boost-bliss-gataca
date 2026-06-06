@@ -149,11 +149,9 @@
   const sticky = document.querySelector('.sticky-shop-cta');
   if (!hero || !product || !sticky) return;
   const update = () => {
-    const heroBottom = hero.getBoundingClientRect().bottom;
-    const productTop = product.getBoundingClientRect().top;
     const scienceRect = science?.getBoundingClientRect();
     const scienceInView = !!scienceRect && scienceRect.top < window.innerHeight * 0.92 && scienceRect.bottom > window.innerHeight * 0.12;
-    const ready = heroBottom < window.innerHeight * 0.42 || productTop < window.innerHeight * 0.72;
+    const ready = window.scrollY > 24;
     document.body.classList.toggle('sticky-shop-ready', ready && !scienceInView);
   };
   window.addEventListener('scroll', update, { passive: true });

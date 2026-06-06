@@ -694,6 +694,11 @@ body.sticky-shop-ready .sticky-shop-cta {
   transform: translateY(0);
 }
 
+.hero-section .hero-orbit,
+.hero-title-arc::after {
+  display: none !important;
+}
+
 .product-science-section {
   padding-top: clamp(54px, 7vw, 96px) !important;
   padding-bottom: clamp(48px, 6vw, 88px) !important;
