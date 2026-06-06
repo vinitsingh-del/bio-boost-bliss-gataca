@@ -2703,6 +2703,23 @@ body.sticky-shop-ready .sticky-shop-cta {
   filter: saturate(1.08) contrast(1.04);
 }
 
+.domore-red-botanical {
+  aspect-ratio: 1 / 1 !important;
+  width: min(46vw, 540px) !important;
+  max-height: 660px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 30px 42px rgba(0, 0, 0, .16)) saturate(1.08) contrast(1.04) !important;
+  transform: scale(calc(.88 + var(--domore-progress, 0) * .22)) translate3d(0, calc((.5 - var(--domore-progress, 0)) * 26px), 0) !important;
+  transform-origin: center 58%;
+  transition: transform .18s linear, filter .18s linear;
+  will-change: transform;
+}
+
 .domore-real-plant-wrap::before {
   inset: 10% 4% 6% 18% !important;
   background: radial-gradient(circle, rgba(5, 5, 5, .16), transparent 62%) !important;
@@ -2826,6 +2843,12 @@ body.sticky-shop-ready .sticky-shop-cta {
     width: min(84vw, 390px) !important;
     max-height: 420px;
     border-radius: 24px;
+  }
+
+  .domore-red-botanical {
+    width: min(92vw, 410px) !important;
+    max-height: 410px !important;
+    border-radius: 0 !important;
   }
 
   .domore-real-plant-wrap {

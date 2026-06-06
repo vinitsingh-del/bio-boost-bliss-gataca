@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Red berberine botanical plant</title>
+  <desc id="desc">A red botanical berberine plant with roots, leaves, and berry clusters on a white background.</desc>
+  <defs>
+    <radialGradient id="leaf" cx="38%" cy="28%" r="72%">
+      <stop offset="0" stop-color="#ff8a76"/>
+      <stop offset=".48" stop-color="#d6241d"/>
+      <stop offset="1" stop-color="#8f0f10"/>
+    </radialGradient>
+    <linearGradient id="stem" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f25a47"/>
+      <stop offset=".48" stop-color="#b51516"/>
+      <stop offset="1" stop-color="#6d0b0c"/>
+    </linearGradient>
+    <radialGradient id="berry" cx="35%" cy="24%" r="75%">
+      <stop offset="0" stop-color="#ffb0a4"/>
+      <stop offset=".42" stop-color="#e62922"/>
+      <stop offset="1" stop-color="#8a0f12"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1000" fill="#fff"/>
+  <g filter="url(#softShadow)">
+    <g fill="none" stroke="url(#stem)" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M498 800C496 690 499 571 505 445c5-111 15-221 35-320" stroke-width="18"/>
+      <path d="M505 515C432 446 366 381 286 308" stroke-width="13"/>
+      <path d="M513 505C589 425 651 337 714 232" stroke-width="13"/>
+      <path d="M506 620C411 590 321 548 217 491" stroke-width="12"/>
+      <path d="M509 608C612 565 706 514 811 444" stroke-width="12"/>
+      <path d="M500 710C439 698 371 690 286 679" stroke-width="10"/>
+      <path d="M502 707C573 684 646 654 743 609" stroke-width="10"/>
+    </g>
+    <g fill="none" stroke="url(#stem)" stroke-linecap="round" stroke-width="6" opacity=".92">
+      <path d="M498 800C454 824 406 836 356 849"/>
+      <path d="M498 802C444 869 386 893 323 917"/>
+      <path d="M498 803C530 850 559 884 597 927"/>
+      <path d="M501 802C574 828 632 840 703 858"/>
+      <path d="M492 807C456 885 435 928 404 971"/>
+      <path d="M506 807C539 892 558 935 590 976"/>
+      <path d="M493 814C390 837 331 856 260 892"/>
+      <path d="M507 813C620 830 684 851 759 884"/>
+    </g>
+    <g>
+      <g fill="url(#leaf)">
+        <ellipse cx="527" cy="178" rx="35" ry="78" transform="rotate(14 527 178)"/>
+        <ellipse cx="584" cy="214" rx="31" ry="75" transform="rotate(43 584 214)"/>
+        <ellipse cx="468" cy="221" rx="31" ry="73" transform="rotate(-42 468 221)"/>
+        <ellipse cx="420" cy="312" rx="34" ry="82" transform="rotate(-52 420 312)"/>
+        <ellipse cx="352" cy="350" rx="31" ry="73" transform="rotate(-72 352 350)"/>
+        <ellipse cx="301" cy="278" rx="30" ry="72" transform="rotate(-18 301 278)"/>
+        <ellipse cx="245" cy="364" rx="28" ry="69" transform="rotate(-44 245 364)"/>
+        <ellipse cx="661" cy="326" rx="34" ry="80" transform="rotate(42 661 326)"/>
+        <ellipse cx="725" cy="285" rx="30" ry="76" transform="rotate(22 725 285)"/>
+        <ellipse cx="771" cy="365" rx="29" ry="70" transform="rotate(55 771 365)"/>
+        <ellipse cx="610" cy="431" rx="36" ry="83" transform="rotate(66 610 431)"/>
+        <ellipse cx="394" cy="477" rx="36" ry="82" transform="rotate(-67 394 477)"/>
+        <ellipse cx="282" cy="520" rx="30" ry="71" transform="rotate(-71 282 520)"/>
+        <ellipse cx="690" cy="535" rx="34" ry="80" transform="rotate(70 690 535)"/>
+        <ellipse cx="796" cy="487" rx="30" ry="73" transform="rotate(60 796 487)"/>
+        <ellipse cx="430" cy="630" rx="32" ry="75" transform="rotate(-84 430 630)"/>
+        <ellipse cx="586" cy="618" rx="32" ry="78" transform="rotate(86 586 618)"/>
+      </g>
+      <g fill="none" stroke="#7d0c0e" stroke-linecap="round" opacity=".45">
+        <path d="M527 112c3 48 1 96-2 132"/>
+        <path d="M584 151c-30 44-61 86-92 126"/>
+        <path d="M468 158c29 43 60 84 93 124"/>
+        <path d="M420 244c54 41 107 75 161 102"/>
+        <path d="M661 255c-45 48-95 88-152 119"/>
+        <path d="M394 410c66 45 130 75 194 91"/>
+        <path d="M610 363c-51 49-104 84-159 105"/>
+        <path d="M430 565c58 23 118 34 178 34"/>
+        <path d="M586 545c-51 31-103 52-157 63"/>
+      </g>
+    </g>
+    <g fill="url(#berry)" stroke="#8b0e11" stroke-width="3">
+      <ellipse cx="309" cy="409" rx="18" ry="31" transform="rotate(-26 309 409)"/>
+      <ellipse cx="268" cy="431" rx="17" ry="29" transform="rotate(-42 268 431)"/>
+      <ellipse cx="247" cy="289" rx="13" ry="20"/>
+      <ellipse cx="222" cy="305" rx="12" ry="19"/>
+      <ellipse cx="673" cy="258" rx="13" ry="20"/>
+      <ellipse cx="703" cy="244" rx="12" ry="19"/>
+      <ellipse cx="735" cy="427" rx="17" ry="30" transform="rotate(28 735 427)"/>
+      <ellipse cx="776" cy="439" rx="17" ry="29" transform="rotate(44 776 439)"/>
+      <ellipse cx="340" cy="573" rx="18" ry="31" transform="rotate(-34 340 573)"/>
+      <ellipse cx="298" cy="586" rx="17" ry="29" transform="rotate(-50 298 586)"/>
+      <ellipse cx="662" cy="651" rx="18" ry="32" transform="rotate(34 662 651)"/>
+      <ellipse cx="704" cy="630" rx="17" ry="30" transform="rotate(45 704 630)"/>
+      <ellipse cx="813" cy="548" rx="17" ry="29" transform="rotate(69 813 548)"/>
+      <ellipse cx="849" cy="542" rx="16" ry="28" transform="rotate(77 849 542)"/>
+    </g>
+  </g>
+</svg>
