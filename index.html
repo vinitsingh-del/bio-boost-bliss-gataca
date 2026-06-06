@@ -84,7 +84,7 @@
   <div class="sticky-shop-cta-inner">
     <img src="assets/biosolve-berberine-cutout.png" alt="BioSolve Berberine"/>
     <div class="sticky-shop-copy"><p>BioSolve Berberine</p><strong>₹1,499 · ₹51/day · Save ₹900</strong></div>
-    <a href="#product-details" class="sticky-shop-button">Start</a>
+    <button type="button" class="sticky-shop-button" data-sticky-atc aria-label="Add BioSolve Berberine to cart">Start</button>
   </div>
 </div><footer class="relative bg-ink text-cream"><div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-4 md:px-8"><div class="md:col-span-2"><div class="font-display text-2xl font-light tracking-[0.22em] text-cream">GATACA</div><p class="mt-4 max-w-sm text-sm text-cream/70">Live longer through peak performance. Research-backed supplements engineered for the longevity-curious.</p></div><div><div class="text-xs font-semibold uppercase tracking-[0.22em] text-cream/60">Shop</div><ul class="mt-4 space-y-2 text-sm"><li>BioSolve Berberine</li><li>NMN</li><li>Creatine</li><li>Stacks</li></ul></div><div><div class="text-xs font-semibold uppercase tracking-[0.22em] text-cream/60">Company</div><ul class="mt-4 space-y-2 text-sm"><li>About</li><li>Science</li><li>#DoMore Journal</li><li>Contact</li></ul></div></div><div class="border-t border-cream/10 px-4 py-5 text-center text-xs text-cream/50 md:px-8">© GATACA Nutraceuticals · Third-party tested · Made for longevity</div></footer></div><!--/$--><script id="hero-parallax">
 (() => {
@@ -117,6 +117,29 @@
   window.addEventListener('scroll', request, { passive: true });
   window.addEventListener('resize', request, { passive: true });
   update();
+})();
+</script><script id="sticky-atc">
+(() => {
+  const button = document.querySelector('[data-sticky-atc]');
+  if (!button) return;
+  const cartBadges = Array.from(document.querySelectorAll('button[aria-label="Cart"] span'));
+  const setCartCount = (count) => {
+    cartBadges.forEach((badge) => {
+      badge.textContent = String(count);
+      badge.setAttribute("aria-label", `${count} item in cart`);
+    });
+  };
+  button.addEventListener("click", () => {
+    setCartCount(1);
+    button.classList.add("is-added");
+    button.textContent = "Added";
+    button.setAttribute("aria-label", "BioSolve Berberine added to cart");
+    window.setTimeout(() => {
+      button.classList.remove("is-added");
+      button.textContent = "Start";
+      button.setAttribute("aria-label", "Add BioSolve Berberine to cart");
+    }, 1800);
+  });
 })();
 </script><script id="sticky-shop-reveal">
 (() => {
