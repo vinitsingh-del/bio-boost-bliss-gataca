@@ -1236,6 +1236,121 @@ body.sticky-shop-ready .sticky-shop-cta {
   display: none !important;
 }
 
+.site-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background: #fbfbf8;
+  transition: opacity .42s ease, visibility .42s ease;
+}
+
+.site-preloader-mark {
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  transform: translateY(-8px);
+  animation: preloaderLift .9s cubic-bezier(.2, .7, .2, 1) both;
+}
+
+.site-preloader-mark img {
+  width: clamp(118px, 16vw, 188px);
+  height: auto;
+  filter: grayscale(1) contrast(1.2) drop-shadow(0 18px 30px rgba(0, 0, 0, .12));
+}
+
+.site-preloader-mark span {
+  width: 138px;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(5, 5, 5, .1);
+}
+
+.site-preloader-mark span::before {
+  content: "";
+  display: block;
+  width: 44%;
+  height: 100%;
+  border-radius: inherit;
+  background: #050505;
+  animation: preloaderTrack .82s ease-in-out infinite;
+}
+
+.preloader-done .site-preloader {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hero-title-arc {
+  position: relative;
+  display: inline-block !important;
+  justify-content: center;
+  max-width: min(94vw, 840px) !important;
+  width: min(94vw, 840px);
+  min-height: clamp(72px, 14vw, 154px);
+  font-size: 0 !important;
+  line-height: .9 !important;
+  filter: drop-shadow(0 0 16px rgba(5, 5, 5, .1)) drop-shadow(0 20px 36px rgba(5, 5, 5, .1));
+}
+
+.hero-title-arc::after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: 8%;
+  height: 32%;
+  border-top: 1px solid rgba(5, 5, 5, .16);
+  border-radius: 50% 50% 0 0;
+  pointer-events: none;
+  filter: drop-shadow(0 -8px 12px rgba(5, 5, 5, .08));
+}
+
+.hero-title-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.hero-title-svg text {
+  fill: #020202;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 102px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.hero-title-svg textPath {
+  dominant-baseline: middle;
+}
+
+@keyframes preloaderLift {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-8px) scale(1);
+  }
+}
+
+@keyframes preloaderTrack {
+  0% {
+    transform: translateX(-110%);
+  }
+  52% {
+    transform: translateX(86%);
+  }
+  100% {
+    transform: translateX(238%);
+  }
+}
+
 @keyframes heroProductFastPop {
   0% {
     opacity: 0;
@@ -1299,6 +1414,22 @@ body.sticky-shop-ready .sticky-shop-cta {
     margin-top: .62rem !important;
     font-size: clamp(1.62rem, 8.1vw, 2.76rem) !important;
     line-height: .94 !important;
+  }
+
+  .hero-title-arc {
+    width: min(92vw, 430px);
+    min-height: 74px;
+    font-size: 0 !important;
+  }
+
+  .hero-title-arc::after {
+    left: 12%;
+    right: 12%;
+    bottom: 11%;
+  }
+
+  .hero-title-svg text {
+    font-size: 104px;
   }
 
   .hero-section .hero-subtitle {
