@@ -1187,6 +1187,25 @@ body.sticky-shop-ready .sticky-shop-cta {
   border-color: rgba(5, 5, 5, .24) !important;
 }
 
+.border-y.border-rust\/50.bg-background {
+  border-top-color: rgba(5, 5, 5, .16) !important;
+  border-bottom-color: rgba(5, 5, 5, .16) !important;
+  background: #fbfbf8 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .82), inset 0 -1px 0 rgba(255, 255, 255, .82);
+}
+
+.border-y.border-rust\/50.bg-background .text-rust {
+  color: #050505 !important;
+}
+
+.border-y.border-rust\/50.bg-background .bg-rust\/70 {
+  background-color: rgba(5, 5, 5, .28) !important;
+}
+
+.border-y.border-rust\/50.bg-background .animate-ticker {
+  filter: grayscale(1);
+}
+
 @media (max-width: 767px) {
   .hero-section {
     min-height: 78svh !important;
