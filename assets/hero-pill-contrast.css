@@ -1,6 +1,10 @@
 .hero-capsule {
-  opacity: .58;
-  filter: blur(7px) saturate(1.12) contrast(1.04);
+  opacity: 0;
+  filter: none;
+}
+
+.hero-capsule-field {
+  display: none !important;
 }
 
 html {
@@ -239,15 +243,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-section .hero-product-wrap::before {
-  width: min(58vw, 520px);
-  height: min(58vw, 520px);
-  opacity: .86;
+  content: none !important;
+  display: none !important;
 }
 
 .hero-section .hero-product-wrap::after {
-  top: 52%;
-  width: min(48vw, 430px);
-  height: min(48vw, 430px);
+  content: none !important;
+  display: none !important;
+}
+
+.hero-bottle-shell::before,
+.hero-bottle-shell::after {
+  content: none !important;
+  display: none !important;
 }
 
 .hero-discover-link {
