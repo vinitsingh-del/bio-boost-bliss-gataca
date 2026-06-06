@@ -43,8 +43,10 @@
 }
 
 .hero-bottle-img {
-  height: 90% !important;
-  transform: scale(.98);
+  height: 95% !important;
+  transform: scale(1);
+  transform-origin: 50% 58%;
+  animation: heroProductZoomIn 1.25s cubic-bezier(.2, .78, .18, 1) both, heroProductBreath 6.4s ease-in-out 1.25s infinite;
 }
 
 .hero-section .hero-product-wrap::before {
@@ -324,6 +326,31 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 }
 
+@keyframes heroProductZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(.78) translateY(18px);
+    filter: saturate(1.02) contrast(1.02) drop-shadow(0 12px 18px rgba(0, 0, 0, .08));
+  }
+  62% {
+    opacity: 1;
+    transform: scale(1.045) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroProductBreath {
+  0%, 100% {
+    transform: scale(1);
+  }
+  48% {
+    transform: scale(1.035);
+  }
+}
+
 @keyframes scienceCardSweep {
   from {
     transform: translateX(-72%);
@@ -348,6 +375,12 @@ body.sticky-shop-ready .sticky-shop-cta {
 @media (max-width: 980px) {
   .science-shell {
     grid-template-columns: 1fr !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bottle-img {
+    animation: none !important;
   }
 }
 
@@ -389,8 +422,8 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-bottle-img {
-    height: 90% !important;
-    transform: scale(.98);
+    height: 94% !important;
+    transform: scale(1);
   }
 
   .hero-discover-link {
