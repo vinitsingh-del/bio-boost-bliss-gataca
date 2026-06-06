@@ -2945,13 +2945,44 @@ body.sticky-shop-ready .sticky-shop-cta {
 }
 
 @media (max-width: 767px) {
+  header.sticky > div:first-child .animate-ticker {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  header.sticky > div:nth-child(2) {
+    min-height: 76px !important;
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+  }
+
+  header.sticky > div:nth-child(2) > a img {
+    height: 19px !important;
+    width: auto !important;
+  }
+
+  header.sticky button[aria-label="Cart"] {
+    padding: 6px !important;
+  }
+
+  header.sticky button[aria-label="Cart"] svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  header.sticky button[aria-label="Cart"] span {
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 9px !important;
+  }
+
   .hero-section {
     min-height: 70svh !important;
   }
 
   .hero-section .hero-inner {
     min-height: 82svh !important;
-    padding-top: 8px !important;
+    padding-top: 2px !important;
     padding-bottom: 40px !important;
   }
 
