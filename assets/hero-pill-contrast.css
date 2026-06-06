@@ -2901,16 +2901,46 @@ body.sticky-shop-ready .sticky-shop-cta {
 
 @media (min-width: 768px) {
   .hero-section {
-    min-height: 94svh !important;
+    min-height: 108svh !important;
+  }
+
+  .hero-section .hero-inner {
+    min-height: 108svh !important;
+  }
+
+  .hero-section .hero-subtitle {
+    order: 6;
+    margin-top: 10px !important;
+    max-width: 640px !important;
+  }
+
+  .hero-cro-tags {
+    order: 5;
+    margin-top: 8px !important;
   }
 
   .hero-section .hero-product-wrap {
-    height: 39vh !important;
-    min-height: 410px !important;
+    order: 4;
+    height: 52vh !important;
+    min-height: 540px !important;
+    margin-top: -6px !important;
+    align-items: start !important;
+  }
+
+  .hero-section .hero-bottle,
+  .hero-bottle-shell {
+    height: min(49.5vh, 539px) !important;
+    width: min(45vw, 539px) !important;
+    max-width: min(45vw, 539px) !important;
+  }
+
+  .hero-bottle-img {
+    height: 96% !important;
   }
 
   .hero-discover-link {
-    margin-top: 78px !important;
+    order: 7;
+    margin-top: 14px !important;
   }
 }
 
@@ -2920,7 +2950,7 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-section .hero-inner {
-    min-height: 70svh !important;
+    min-height: 82svh !important;
     padding-top: 8px !important;
     padding-bottom: 40px !important;
   }
@@ -2941,8 +2971,11 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-section .hero-subtitle {
-    margin-top: -9px !important;
+    order: 7;
+    margin-top: 8px !important;
     max-width: 84vw !important;
+    font-size: .68rem !important;
+    line-height: 1.34 !important;
   }
 
   .hero-cro-tags {
@@ -2968,13 +3001,24 @@ body.sticky-shop-ready .sticky-shop-cta {
 
   .hero-section .hero-product-wrap {
     order: 5;
-    height: 35vh !important;
-    min-height: 326px !important;
-    margin-top: 0 !important;
+    height: 39vh !important;
+    min-height: 358px !important;
+    margin-top: -2px !important;
+  }
+
+  .hero-section .hero-bottle,
+  .hero-bottle-shell {
+    height: min(39.9vh, 358px) !important;
+    width: min(101vw, 358px) !important;
+    max-width: 101vw !important;
+  }
+
+  .hero-bottle-img {
+    height: 96% !important;
   }
 
   .hero-discover-link {
-    order: 7;
+    order: 8;
     margin-top: 12px !important;
   }
 }
