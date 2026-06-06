@@ -3,6 +3,195 @@
   filter: blur(7px) saturate(1.12) contrast(1.04);
 }
 
+html {
+  scrollbar-color: #0b0b0b #f8f7f2;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #f8f7f2;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  border: 3px solid #f8f7f2;
+  border-radius: 999px;
+  background: #0b0b0b;
+}
+
+.testimonial-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, .1), transparent 26%),
+    linear-gradient(135deg, #050505 0%, #111 48%, #f8f7f2 48.2%, #f8f7f2 100%) !important;
+  color: #fff !important;
+  padding-top: clamp(54px, 6vw, 92px) !important;
+  padding-bottom: clamp(62px, 7vw, 104px) !important;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.testimonial-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(90deg, #000, transparent 72%);
+}
+
+.testimonial-section > div {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-section h2 {
+  max-width: 760px;
+  color: #fff !important;
+  font-family: var(--font-sans, inherit);
+  font-size: clamp(2.4rem, 5.2vw, 5.2rem) !important;
+  line-height: .92 !important;
+  letter-spacing: 0 !important;
+}
+
+.testimonial-section h2::after {
+  content: "Indian wellness stories";
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 18px;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: rgba(255, 255, 255, .78);
+  font-family: var(--font-sans, inherit);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, .06);
+  backdrop-filter: blur(12px);
+}
+
+.testimonial-section .grid {
+  align-items: stretch;
+  gap: clamp(12px, 1.5vw, 20px) !important;
+}
+
+.testimonial-section button {
+  border-color: rgba(255, 255, 255, .22) !important;
+  border-radius: 18px !important;
+  background: #090909 !important;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, .28);
+  transition: transform .45s ease, border-color .45s ease, box-shadow .45s ease;
+}
+
+.testimonial-section button:hover,
+.testimonial-section button:focus-visible {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, .7) !important;
+  box-shadow: 0 30px 66px rgba(0, 0, 0, .36);
+  outline: none;
+}
+
+.testimonial-section button img {
+  filter: grayscale(.16) saturate(.72) contrast(1.06);
+}
+
+.testimonial-section button > div.absolute.inset-0 {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, .82), rgba(0, 0, 0, .12) 48%, rgba(0, 0, 0, .36)) !important;
+}
+
+.testimonial-section button > span:nth-of-type(1) {
+  border: 1px solid rgba(255, 255, 255, .18);
+  background: rgba(0, 0, 0, .76) !important;
+  color: #fff !important;
+  backdrop-filter: blur(12px);
+}
+
+.testimonial-section button > span:nth-of-type(2) {
+  background: rgba(255, 255, 255, .94) !important;
+  color: #060606 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, .34) !important;
+}
+
+.testimonial-section button > span:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: inherit;
+  animation: testimonialPulse 2.5s ease-in-out infinite;
+}
+
+.testimonial-section button > span:nth-of-type(2) svg {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+.testimonial-section button > span:nth-of-type(3) {
+  max-width: calc(100% - 28px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .16);
+  background: rgba(0, 0, 0, .78) !important;
+  color: #fff !important;
+  text-overflow: ellipsis;
+  backdrop-filter: blur(12px);
+}
+
+@keyframes testimonialPulse {
+  0%, 100% {
+    transform: scale(.96);
+    opacity: .42;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: .08;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-section {
+    background: linear-gradient(180deg, #050505 0%, #101010 58%, #f8f7f2 58.2%, #f8f7f2 100%) !important;
+    padding-top: 44px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .testimonial-section h2 {
+    font-size: clamp(2.15rem, 11vw, 3.25rem) !important;
+  }
+
+  .testimonial-section h2::after {
+    margin-top: 14px;
+    font-size: 9px;
+    letter-spacing: .18em;
+  }
+
+  .testimonial-section .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .testimonial-section button {
+    border-radius: 14px !important;
+  }
+
+  .testimonial-section button > span:nth-of-type(2) {
+    height: 46px !important;
+    width: 46px !important;
+  }
+}
+
 .hero-capsule-b {
   opacity: .50;
   filter: blur(9px) saturate(1.12) contrast(1.04);
