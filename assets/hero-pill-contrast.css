@@ -2862,6 +2862,35 @@ body.sticky-shop-ready .sticky-shop-cta {
   max-width: 610px !important;
 }
 
+.hero-discover-link {
+  overflow: hidden !important;
+  isolation: isolate;
+}
+
+.hero-discover-link::after {
+  content: "";
+  position: absolute;
+  inset: -30% -45%;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 0 38%, rgba(255, 255, 255, .72) 48%, rgba(255, 255, 255, .2) 56%, transparent 68% 100%);
+  transform: translateX(-62%) rotate(5deg);
+  animation: heroCtaShine 2.4s cubic-bezier(.2, .7, .2, 1) infinite;
+}
+
+@keyframes heroCtaShine {
+  0%, 36% {
+    transform: translateX(-70%) rotate(5deg);
+    opacity: 0;
+  }
+  48% {
+    opacity: .95;
+  }
+  72%, 100% {
+    transform: translateX(70%) rotate(5deg);
+    opacity: 0;
+  }
+}
+
 .hero-cro-tags {
   margin-top: 12px !important;
 }
@@ -2897,11 +2926,14 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-section .hero-title {
-    margin-top: .38rem !important;
+    margin-top: .18rem !important;
+    max-width: 96vw !important;
+    transform: translateY(-6px);
   }
 
   .hero-title-arc {
-    min-height: 58px !important;
+    width: min(98vw, 430px) !important;
+    min-height: 62px !important;
   }
 
   .hero-title-arc::after {
@@ -2914,16 +2946,35 @@ body.sticky-shop-ready .sticky-shop-cta {
   }
 
   .hero-cro-tags {
-    margin-top: 7px !important;
+    order: 6;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: min(90vw, 342px) !important;
+    max-width: 342px !important;
+    margin-top: -5px !important;
+    margin-inline: auto !important;
+    gap: 6px !important;
+  }
+
+  .hero-cro-tags span {
+    min-height: 30px !important;
+    justify-content: center !important;
+    padding: 0 9px !important;
+    font-size: 6.8px !important;
+    letter-spacing: .078em !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
   }
 
   .hero-section .hero-product-wrap {
-    height: 33vh !important;
-    min-height: 288px !important;
+    order: 5;
+    height: 35vh !important;
+    min-height: 326px !important;
     margin-top: 0 !important;
   }
 
   .hero-discover-link {
-    margin-top: 38px !important;
+    order: 7;
+    margin-top: 12px !important;
   }
 }
